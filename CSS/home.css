@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.text-peqe {
+    max-width: 1000%;
+    height: 1.5rem;
+    background-color: black;
+}
+.text-peqe p {
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+.title {
+    text-align: center;
+    padding: 56px;
+
+}
+.title h1 {
+    font-size: 50px;
+    padding: -10px;
+    margin-bottom: 10px;
+}
+.title h2 {
+    letter-spacing: 18px;
+    font-size: 20px;
+}
+
+
+
+
+.icon {
+    margin-left: 190px;
+    margin-top: -125px;
+}
+.icon img {
+    max-width: 30px;
+    max-height: auto;
+}
+
+.icons {
+    margin-left: 85%;
+    margin-top: -43px;
+}
+.icons img {
+    max-width: 40px;
+    max-height: auto;
+    margin-left: 10px;
+}
+
+
+
+.foto {
+    margin-top: 116px;
+}
+.foto img {
+    margin-bottom: 100px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+.opciones {
+    margin-bottom: 110px;
+    font-size: 20px;
+    text-align: center;
+    word-spacing: 70px;
+
+}
+.opciones a {
+    color: black;
+    text-decoration: none;
+}
+
+.container1 {
+    display: flex;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
+  gap: 20px; /* espacio entre cada tarjeta */
+  padding: 10px;
+}
+
+.cuadro {
+    background-color: black;
+    margin-top: 50px;
+}
+
+.uno ,
+.dos ,
+.tres ,
+.cuatro {    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-bottom: 200px;
+}
+
+
+
+.line {
+    margin-left: -93rem;
+}
+
+.line img {
+    
+    width: 10rem;
+    height: autpx;
+}
+
+.line-text {
+    margin-top: -55px;
+    color: white;
+}
+
