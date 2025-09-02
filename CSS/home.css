@@ -89,48 +89,11 @@ body {
     text-decoration: none;
 }
 
-.container1 {
-    display: flex;
-}
 
 .container1 {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 columnas iguales */
-  gap: 20px; /* espacio entre cada tarjeta */
-  padding: 10px;
-}
-
-.cuadro {
-    background-color: black;
-    margin-top: 50px;
-}
-
-.uno ,
-.dos ,
-.tres ,
-.cuatro {    
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 10vh;
-    margin-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 5 columnas iguales */
+    gap: 10px; /* espacio entre cada tarjeta */
+    margin: 0px 400px;
 }
-
-
-
-.line {
-    margin-left: -93rem;
-}
-
-.line img {
-    
-    width: 10rem;
-    height: autpx;
-}
-
-.line-text {
-    margin-top: -55px;
-    color: white;
-}
-
