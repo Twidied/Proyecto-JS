@@ -34,19 +34,20 @@ body {
 
 .title {
     text-align: center;
-    padding: 56px;
+    padding: 40px;
 
 }
 
 .title h1 {
-    font-size: 50px;
+    font-size: 45px;
     padding: -10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .title h2 {
-    letter-spacing: 18px;
-    font-size: 20px;
+    letter-spacing: 16px;
+    font-size: 18px;
+    margin-left: 17px;
 }
 
 
@@ -83,24 +84,100 @@ body {
     margin-top: 45px;
 }
 .foto img {
-    width: 50%;
+    width: 45%;
     height: auto;
 }
 
 .text-well {
     text-align: center;
-    margin-top: 120px;
+    margin-top: 90px;
 }
 
 .texts-info {
-    text-align: end;
-    margin-top: -50rem;
+    text-align: center;
+    margin-top: -52rem;
+    margin-left: 80rem;
 }
 
 .call,
 .email,
 .store {
-    margin-bottom: 130px;
-    margin-right: 320px;
+    margin-bottom: 140px;
+    margin-right: 390px;
     font-size: 20px;
+}
+
+.call a,
+.email a,
+.store a {
+    color: black;
+}
+
+.call h2,
+.email h2,
+.store h2 {
+    margin-bottom: 20px;
+}
+
+.cuadro {
+    background-color: black;
+    display: flex;
+    margin-top: 25rem;
+    gap: 8rem;
+    font-size: 14px;
+    padding: 90px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.word {
+    color: #FFFFFF;
+    text-align: end;
+    position: absolute;
+    right: 20px;
+    bottom: 270px;
+}
+
+
+.iconn {
+    display: flex;
+    text-align: end;
+    position: absolute;
+    right: 20px;
+    bottom: 95px;
+    gap: 15px;
+}
+
+.iconn img {
+    width: 30px;
+    height: auto;
+}
+
+.copy {
+    color: #FFFFFF;
+    font-size: 11px;
+    position: absolute;
+    margin-top: 14rem;
+    margin-left: -80px;
+}
+
+hr {
+    margin-top: 35px;
+}
+
+html{
+    position: relative;
+}
+#cargador{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0px;
+    background-color: white;
 }

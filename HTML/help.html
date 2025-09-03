@@ -7,57 +7,128 @@
     <title>help</title>
     <link rel="stylesheet" href="../CSS/help.css">
 </head>
-<header>
-    <div class="text-peqe">
-        <a href="../HTML/new-release.html">
-            <p> New Release → </p>
-        </a>
-    </div>
-    <div class="title">
-        <h1>NOMBRE</h1>
-        <h2>NOMBRE</h2>
-    </div>
-    <section>
-        <div class="icon">
-            <a href="#">
-                <img src="../src/img/lupa-home.png" alt="lupa-home">
-            </a>
-        </div>
-        <div class="icons">
-            <div>
-                <a href="#"><img src="../src/img/person-home.png" alt="user-home"></a>
-            </div>
-            <div class="carrito">
-                <a href="../HTML/carrito.html"><img src="../src/img/carrito-home.png" alt="carrito-home"><span id="cuenta-carrito">0</span></a>
-            </div>
-        </div>
-        <div class="text-well">
-            <h3>Welcome. <br> How can we help you today?</h3>
-        </div>
-    </section>
-</header>
+
+<div id="cargador">
+    <p>Cargando...</p>
+</div>
 
 <body>
+    <header>
+        <div class="text-peqe">
+            <a href="../HTML/new-release.html">
+                <p> New Release → </p>
+            </a>
+        </div>
+        <div class="title">
+            <h1> ElVEN </h1>
+            <h2>STORE</h2>
+            <hr>
+        </div>
+        <section>
+            <div class="icon">
+                <a href="#">
+                    <img src="../src/img/lupa-home.png" alt="lupa-home">
+                </a>
+            </div>
+            <div class="icons">
+                <div>
+                    <a href="#"><img src="../src/img/person-home.png" alt="user-home"></a>
+                </div>
+                <div class="carrito">
+                    <a href="../HTML/carrito.html"><img src="../src/img/carrito-home.png" alt="carrito-home"><span
+                            id="cuenta-carrito">0</span></a>
+                </div>
+            </div>
+            <div class="text-well">
+                <h3>Welcome. <br> How can we help you today?</h3>
+            </div>
+        </section>
+    </header>
+
     <div class="foto">
         <img src="../src/img/foto-help.png" alt="">
     </div>
     <section class="texts-info">
         <div class="call">
             <h2> Call us </h2>
-            <p> on to Frin: 9AM- <br> Sat: 10AM-7PM EST </p>
-            <a href="#"> +123 456 7891 </a>
+            <p> Mon to Frin: 9AM- <br> Sat: 10AM-7PM EST </p>
+            <a href="#"><strong> +123 456 7891 </strong></a>
         </div>
         <div class="email">
             <h2> Email us </h2>
             <p> We'll get back to you <br> within 48 hours </p>
-            <a href="#"> Sends Form </a>
+            <a href="#"><strong> Sends Form </strong></a>
         </div>
         <div class="store">
             <h2> Store appointment </h2>
-            <a href="#"> Book an </a>
-            <a href="#"> appointment </a>
+            <a href="#"><strong> Book an <br> appointment </strong></a>
         </div>
     </section>
+
+    <footer class="info">
+        <section class="cuadro">
+            <div class="uno">
+                <h2><a href="#"><strong>STORE FINDER</strong></a></h2>
+                <a href="#">Find a store</a> <br>
+                <a href="#">Versace Watches Stores</a> <br>
+            </div>
+            <div class="dos">
+                <h2><a href="#"><strong>CUSTOMER SERVICE</strong></a></h2>
+                <a href="#">Exclusive Services</a> <br>
+                <a href="#">Care Guides</a> <br>
+                <a href="#">Contact Us</a> <br>
+                <a href="#">Help / Frequently Asked Questions</a> <br>
+                <a href="#">Orders and Shipping</a> <br>
+                <a href="#">Return and Claim Process</a> <br>
+                <a href="#">Order Tracking</a> <br>
+                <a href="#">Authenticity</a> <br>
+            </div>
+            <div class="tres">
+                <h2><a href="#"><strong>COMPANY</strong></a></h2>
+                <a href="#">Company Profile</a> <br>
+                <a href="#">Corporate Information</a> <br>
+                <a href="#">Investor Relations</a> <br>
+                <a href="#">Responsible Sourcing</a> <br>
+                <a href="#">Work with Us</a> <br>
+                <a href="#">Site Map</a> <br>
+                <a href="#">Site Map Products</a> <br>
+            </div>
+            <div class="cuatro">
+                <h2><a href="#"><strong>LEGAL NOTICES</strong></a></h2>
+                <a href="#">Legal Notices</a> <br>
+                <a href="#">Terms and Conditions</a> <br>
+                <a href="#">General Sales Conditions</a> <br>
+                <a href="#">Commercial and Ethical Code of Conduct</a> <br>
+                <a href="#">Code of Conduct for Business Partners</a> <br>
+                <a href="#">Cookie Policy</a> <br>
+                <a href="#">Privacy Policy</a> <br>
+                <a href="#">Privacy Policy for Business Partners</a> <br>
+            </div>
+            <div class="word">
+                <p><strong> Location and Currency: <br> Colombia | EN Col$</strong></p>
+            </div>
+            <div class="iconn">
+                <a href=""><img src="../src/img/icons-instagram.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-facebook.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-x.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-pinterest.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-youtube.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-tik-tok.svg" alt=""></a>
+            </div>
+            <div class="copy">
+                <p>© Gianni Versace S.r.l. VAT IT04636090963</p>
+            </div>
+        </section>
+    </footer>
+
 </body>
+<script>
+    document.body.style.overflow = "hidden"
+    setTimeout(() => {
+        const minicargador = document.querySelector("#cargador")
+        minicargador.style.display = "none"
+        document.body.style.overflow = "auto"
+    }, 1000)
+</script>
 
 </html>
