@@ -17,6 +17,10 @@ body {
     background-color: black;
 }
 
+.text-peqe a {
+    text-decoration: none;
+}
+
 .text-peqe p {
     padding: 5px;
     letter-spacing: 2px;

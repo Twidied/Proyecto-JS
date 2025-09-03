@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+/*(PC)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+
+.video {
+    position: relative;
+    z-index: 0;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.title a {
+    text-decoration: none;
+}
+
+h1 {
+    color: #ffffff;
+    letter-spacing: 5px;
+    font-size: 40px;
+    margin: 0;
+}
+
+/*porta*/
+
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 50px;
+        letter-spacing: 8px;
+    }
+
+    .btn {
+        font-size: 26px;
+    }
+}
+
+/*tab*/
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+        letter-spacing: 6px;
+    }
+
+    .btn {
+        font-size: 22px;
+    }
+
+    .btn a {
+        padding: 6px 30px;
+    }
+}
+
+/*celuko*/
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        letter-spacing: 4px;
+    }
+
+    .btn {
+        font-size: 18px;
+    }
+
+    .btn a {
+        padding: 5px 20px;
+    }
+}
