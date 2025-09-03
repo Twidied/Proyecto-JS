@@ -16,6 +16,7 @@ body {
     height: 1.5rem;
     background-color: black;
 }
+
 .text-peqe p {
     padding: 5px;
     letter-spacing: 2px;
@@ -32,11 +33,13 @@ body {
     padding: 56px;
 
 }
+
 .title h1 {
     font-size: 50px;
     padding: -10px;
     margin-bottom: 10px;
 }
+
 .title h2 {
     letter-spacing: 18px;
     font-size: 20px;
@@ -49,6 +52,7 @@ body {
     margin-left: 190px;
     margin-top: -125px;
 }
+
 .icon img {
     max-width: 30px;
     max-height: auto;
@@ -58,6 +62,7 @@ body {
     margin-left: 85%;
     margin-top: -43px;
 }
+
 .icons img {
     max-width: 40px;
     max-height: auto;
@@ -69,6 +74,7 @@ body {
 .foto {
     margin-top: 116px;
 }
+
 .foto img {
     margin-bottom: 100px;
     width: 100%;
@@ -84,6 +90,7 @@ body {
     word-spacing: 70px;
 
 }
+
 .opciones a {
     color: black;
     text-decoration: none;
@@ -91,9 +98,51 @@ body {
 
 
 .container1 {
-    display: flex;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 5 columnas iguales */
-    gap: 10px; /* espacio entre cada tarjeta */
-    margin: 0px 400px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    margin-top: 10px;
+}
+
+
+.container1 .card {
+    background: #161616;
+    color: #fff;
+    width: 180px;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container1 .card img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.container1 .card h4 {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.container1 .card p {
+    font-size: 13px;
+    margin: 0;
+}
+
+
+#cuenta-carrito {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
 }
