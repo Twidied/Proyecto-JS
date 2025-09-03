@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ariel', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.text-peqe {
+    max-width: 1000%;
+    height: 1.5rem;
+    background-color: black;
+}
+
+.text-peqe p {
+    padding: 5px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+
+.title {
+    color: black;
+    margin-left: 300px;
+    padding: 56px;
+    margin-top: 10px;
+}
+
+.title h1 {
+    font-size: 50px;
+    padding: -10px;
+    margin-bottom: 4px;
+}
+
+.title h2 {
+    letter-spacing: 18px;
+    margin-left: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.title h3 {
+    margin-top: 120px;
+    font-size: 30px;
+}
+
+.title a {
+    color: black;
+    text-decoration: none;
+}
+
+
+.icon1 {
+    margin-left: 85%;
+    margin-top: -100px;
+}
+
+.icon1 img {
+    max-width: 40px;
+    max-height: auto;
+    margin-left: 10px;
+}
+
+.icon2 {
+    margin-left: 89%;
+    margin-top: -24px;
+}
+
+.icon2 img {
+    max-width: 30px;
+    max-height: auto;
+    margin-left: 10px;
+}
+
+.icon1 img,
+.icon2 img {
+    margin-top: -20px;
+    margin-left: -150px;
+}
+
+
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.cart-item {
+    background: #161616;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #fff;
+    width: 250px;
+    margin: 10px;
+}
+
+
+.cart-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+
+.total {
+    margin-top: 15px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-top: 200px;
+    text-align: center;
+    color: #000000;
+}
