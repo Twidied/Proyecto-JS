@@ -73,6 +73,11 @@ body {
     margin-left: 10px;
 }
 
+.carrito {
+    margin-left: 47px;
+    margin-top: -43px;
+}
+
 
 .foto {
     margin-top: 45px;
@@ -85,4 +90,17 @@ body {
 .text-well {
     text-align: center;
     margin-top: 120px;
+}
+
+.texts-info {
+    text-align: end;
+    margin-top: -50rem;
+}
+
+.call,
+.email,
+.store {
+    margin-bottom: 130px;
+    margin-right: 320px;
+    font-size: 20px;
 }
