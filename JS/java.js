@@ -1,6 +1,5 @@
 const apiUrl = "https://fakestoreapi.com/products";
 
-// los aja
 function mainCard(product) {
     const { id, image, price, title } = product;
     const container1 = document.querySelector(".container1");
@@ -30,22 +29,26 @@ function mainCard(product) {
     container1.appendChild(card);
 }
 
-// guarda carrito
 function addToCart(product) {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.push(product);
-    localStorage.setItem("cart", JSON.stringify(cart));
+    let cart = getCart();
+
+    const existingProduct = cart.find(item => item.id === product.id);
+
+    if (existingProduct) {
+        existingProduct.quantity += 1;
+    } else {
+        cart.push({ ...product, quantity: 1 });
+    }
+
+    saveCart(cart);
     updateCartCount();
-    alert("✅ Producto agregado al carrito");
 }
 
-// numero de carrito
 function updateCartCount() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cart = getCart();
     document.getElementById("cuenta-carrito").textContent = cart.length;
 }
 
-// EL API llamar 
 async function getProducts() {
     try {
         const response = await fetch(apiUrl);

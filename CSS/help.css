@@ -40,12 +40,14 @@ body {
 
 .title h1 {
     font-size: 45px;
-    padding: -10px;
+    padding: -15px;
     margin-bottom: 15px;
+    margin-left: 20px;
+    letter-spacing: 14px;
 }
 
 .title h2 {
-    letter-spacing: 16px;
+    letter-spacing: 20px;
     font-size: 18px;
     margin-left: 17px;
 }
@@ -102,8 +104,9 @@ body {
 .call,
 .email,
 .store {
-    margin-bottom: 140px;
-    margin-right: 390px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+    margin-left: -450px;
     font-size: 20px;
 }
 
@@ -122,10 +125,10 @@ body {
 .cuadro {
     background-color: black;
     display: flex;
-    margin-top: 25rem;
+    margin-top: 20rem;
     gap: 8rem;
     font-size: 14px;
-    padding: 90px;
+    padding: 100px;
 }
 
 .info a {
@@ -174,10 +177,19 @@ html{
 #cargador{
     width: 100%;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     top: 0px;
     background-color: white;
+}
+
+#cuenta-carrito {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    text-align: center;
 }
