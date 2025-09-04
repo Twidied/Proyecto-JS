@@ -1,5 +1,5 @@
 function renderCart() {
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const cart = getCart();
     const cartContainer = document.getElementById("cartContainer");
     const cartTotal = document.getElementById("cartTotal");
 
@@ -17,18 +17,30 @@ function renderCart() {
         title.textContent = product.title;
 
         const price = document.createElement("p");
-        price.textContent = `$${product.price}`;
+        price.textContent = `$${product.price} x ${product.quantity}`;
 
-        item.appendChild(img);
-        item.appendChild(title);
-        item.appendChild(price);
+        const removeBtn = document.createElement("button");
+        removeBtn.textContent = "Delete";
+        removeBtn.addEventListener("click", () => {
+            removeFromCart(product.id);
+        });
 
+        item.append(img, title, price, removeBtn);
         cartContainer.appendChild(item);
 
-        total += product.price;
+        total += product.price * product.quantity;
     });
 
     cartTotal.textContent = `Total: $${total.toFixed(2)}`;
 }
 
+function removeFromCart(productId) {
+    let cart = getCart();
+    cart = cart.filter(item => item.id !== productId);
+    saveCart(cart);
+    renderCart();
+    updateCartCount();
+}
+
 renderCart();
+updateCartCount();

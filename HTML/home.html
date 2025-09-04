@@ -6,17 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HOME</title>
     <link rel="stylesheet" href="../CSS/home.css">
-    <script src="../JS/java.js"></script>
 </head>
+<div id="cargador">
+    <p>Cargando...</p>
+</div>
 
 <body>
     <header>
         <div class="text-peqe">
-            <a href="../HTML/new-release.html"><p> New Release → </p></a>
+            <a href="../Hnew-release.html">
+                <p> New Release → </p>
+            </a>
         </div>
         <div class="title">
-            <h1>NOMBRE</h1>
-            <h2>NOMBRE</h2>
+            <h1>ELVEN</h1>
+            <h2>STORE</h2>
+            <hr>
+            <div class="btn">
+                <a href="../HTML/new-release.html"> New Release </a>
+            </div>
         </div>
         <section>
             <div class="icon">
@@ -33,6 +41,7 @@
                 </div>
             </div>
         </section>
+
         <div class="foto">
             <img src="../src/img/foto-home.png" alt="foto-home">
         </div>
@@ -46,10 +55,74 @@
     </header>
     <main>
         <div class="container1">
-
+        </div>
+        <div>
+            <img src="" alt="">
         </div>
     </main>
-
+    <footer class="info">
+        <section class="cuadro">
+            <div class="uno">
+                <h2><a href="#"><strong>STORE FINDER</strong></a></h2>
+                <a href="#">Find a store</a> <br>
+                <a href="#">Versace Watches Stores</a> <br>
+            </div>
+            <div class="dos">
+                <h2><a href="#"><strong>CUSTOMER SERVICE</strong></a></h2>
+                <a href="#">Exclusive Services</a> <br>
+                <a href="#">Care Guides</a> <br>
+                <a href="#">Contact Us</a> <br>
+                <a href="#">Help / Frequently Asked Questions</a> <br>
+                <a href="#">Orders and Shipping</a> <br>
+                <a href="#">Return and Claim Process</a> <br>
+                <a href="#">Order Tracking</a> <br>
+                <a href="#">Authenticity</a> <br>
+            </div>
+            <div class="tres">
+                <h2><a href="#"><strong>COMPANY</strong></a></h2>
+                <a href="#">Company Profile</a> <br>
+                <a href="#">Corporate Information</a> <br>
+                <a href="#">Investor Relations</a> <br>
+                <a href="#">Responsible Sourcing</a> <br>
+                <a href="#">Work with Us</a> <br>
+                <a href="#">Site Map</a> <br>
+                <a href="#">Site Map Products</a> <br>
+            </div>
+            <div class="cuatro">
+                <h2><a href="#"><strong>LEGAL NOTICES</strong></a></h2>
+                <a href="#">Legal Notices</a> <br>
+                <a href="#">Terms and Conditions</a> <br>
+                <a href="#">General Sales Conditions</a> <br>
+                <a href="#">Commercial and Ethical Code of Conduct</a> <br>
+                <a href="#">Code of Conduct for Business Partners</a> <br>
+                <a href="#">Cookie Policy</a> <br>
+                <a href="#">Privacy Policy</a> <br>
+                <a href="#">Privacy Policy for Business Partners</a> <br>
+            </div>
+            <div class="word">
+                <p><strong> Location and Currency: <br> Colombia | EN Col$</strong></p>
+            </div>
+            <div class="iconn">
+                <a href=""><img src="../src/img/icons-instagram.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-facebook.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-x.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-pinterest.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-youtube.svg" alt=""></a>
+                <a href=""><img src="../src/img/icons-tik-tok.svg" alt=""></a>
+            </div>
+            <div class="copy">
+                <p>© Gianni Versace S.r.l. VAT IT04636090963</p>
+            </div>
+        </section>
+    </footer>
+    <script>
+        document.body.style.overflow = "hidden"
+        setTimeout(() => {
+            const minicargador = document.querySelector("#cargador")
+            minicargador.style.display = "none"
+            document.body.style.overflow = "auto"
+        }, 1000)
+    </script>
+    <script src="../JS/java.js"></script>
 </body>
-
 </html>
