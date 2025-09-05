@@ -6,13 +6,11 @@
 }
 
 body {
-    background-color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
+    background-color: #fff;
 }
 
 .text-peqe {
-    max-width: 1000%;
+    width: 100%;
     height: 1.5rem;
     background-color: black;
 }
@@ -26,30 +24,24 @@ body {
     letter-spacing: 2px;
     font-size: 13px;
     text-align: center;
-    color: #FFFFFF;
+    color: #fff;
 }
-
-
-
 
 .title {
     text-align: center;
     padding: 40px;
-
+    position: relative;
 }
 
 .title h1 {
     font-size: 28px;
-    padding: -15px;
     margin-bottom: 15px;
-    margin-left: 20px;
     letter-spacing: 14px;
 }
 
 .title h2 {
     letter-spacing: 20px;
     font-size: 15px;
-    margin-left: 17px;
 }
 
 .btn {
@@ -63,44 +55,38 @@ body {
     justify-content: center;
     cursor: pointer;
     border-radius: 20px;
-    z-index: 10;
 }
 
 .btn a {
-    color: #ffffff;
+    color: #fff;
     text-decoration: none;
 }
 
-
-.icon {
-    margin-left: 110px;
-    margin-top: -207px;
-}
-
-.icon img {
-    max-width: 30px;
-    max-height: auto;
-}
-
 .icons {
-    margin-left: 85%;
-    margin-top: -43px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .icons img {
-    max-width: 40px;
-    max-height: auto;
-    margin-left: 10px;
+    width: 32px;
+    cursor: pointer;
 }
 
-.carrito {
-    margin-left: 47px;
-    margin-top: -42px;
-}
-
-
-.foto {
-    margin-top: 45px;
+.carrito span {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-left: -10px;
 }
 
 .foto img {
@@ -110,21 +96,17 @@ body {
 }
 
 
-
 .opciones {
-    margin-top: 80px;
-    margin-bottom: 120px;
+    margin: 80px 0 120px 0;
     font-size: 20px;
     text-align: center;
     word-spacing: 70px;
-
 }
 
 .opciones a {
     color: black;
     text-decoration: none;
 }
-
 
 .container1 {
     display: grid;
@@ -133,7 +115,6 @@ body {
     justify-content: center;
     margin-top: 100px;
 }
-
 
 .container1 .card {
     background: #161616;
@@ -155,88 +136,68 @@ body {
     margin-bottom: 10px;
 }
 
-.container1 .card h4 {
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.container1 .card p {
-    font-size: 13px;
-    margin: 0;
-}
-
-
-#cuenta-carrito {
-    background-color: black;
-    color: rgb(255, 255, 255);
-    border-radius: 100%;
-    display: inline-block;
-    width: 20px;
-    line-height: 20px;
-    text-align: center;
-}
-
-
-
-hr {
-    margin-top: 35px;
-}
-
-html {
-    position: relative;
-}
-
 .cuadro {
     background-color: black;
     display: flex;
-    margin-top: 20rem;
-    gap: 6rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
     font-size: 14px;
-    padding: 100px;
+    padding: 60px 100px;
+    margin-top: 12rem;
+    flex-wrap: wrap;
 }
 
 .info a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: #fff;
 }
 
 .word {
-    color: #FFFFFF;
-    text-align: end;
-    position: absolute;
-    right: 20px;
-    bottom: 270px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
 }
-
 
 .iconn {
     display: flex;
-    text-align: end;
-    position: absolute;
-    right: 20px;
-    bottom: 30px;
+    justify-content: center;
     gap: 15px;
+    margin: 10px 0;
 }
 
 .iconn img {
     width: 30px;
-    height: auto;
 }
 
 .copy {
-    color: #FFFFFF;
+    color: #fff;
     font-size: 11px;
-    position: absolute;
-    margin-top: 14rem;
-    margin-left: -80px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
 }
 
-hr {
-    margin-top: 35px;
+
+.image1 {
+    display: flex;
+    justify-content: center;
+    gap: 15rem;
+    margin: 5rem auto -250px auto;
 }
 
-html {
-    position: relative;
+.image1 a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.image1 img {
+    max-width: 250px;
+    margin-bottom: 2rem;
 }
 
 #cargador {
@@ -249,20 +210,11 @@ html {
     z-index: 9999;
 }
 
+
 @media (max-width: 1300px) {
     .title h1 {
-        font-size: 30px;
+        font-size: 26px;
         letter-spacing: 10px;
-    }
-
-    .icons {
-        padding-right: px;
-    }
-
-    .btn {
-        font-size: 16px;
-        width: 160px;
-        height: 45px;
     }
 
     .container1 {
@@ -274,114 +226,119 @@ html {
     }
 }
 
-/* table*/
+
 @media (max-width: 768px) {
     .title h1 {
-        font-size: 40px;
+        font-size: 24px;
         letter-spacing: 6px;
     }
 
     .title h2 {
-        font-size: 16px;
-        letter-spacing: 10px;
-    }
-
-    .btn {
-        font-size: 15px;
-        width: 150px;
-        height: 40px;
-    }
-
-    .btn a {
-        padding: 6px 20px;
-    }
-
-    .opciones {
-        font-size: 16px;
-        word-spacing: 15px;
-    }
-
-    .container1 {
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-    }
-
-    .cuadro {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 1.5rem;
-    }
-}
-
-/*cel*/
-@media (max-width: 480px) {
-    .title h1 {
-        font-size: 28px;
-        letter-spacing: 4px;
-    }
-
-    .title h2 {
         font-size: 14px;
-        letter-spacing: 6px;
-    }
-
-    .btn {
-        font-size: 13px;
-        width: 130px;
-        height: 38px;
-        margin: 20px auto;
-    }
-
-    .btn a {
-        padding: 5px 15px;
-    }
-
-    .opciones {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-        font-size: 14px;
-        word-spacing: normal;
-    }
-
-    .foto img {
-        margin-top: 50px;
+        letter-spacing: 8px;
+        margin-bottom: 40px;
     }
 
     .icons {
         top: 10px;
-        left: 60px;
-        right: auto;
+        right: 15px;
+        gap: 15px;
     }
 
-    .icon {
-        top: 10px;
-        left: 10px;
+    .icons img {
+        width: 28px;
     }
 
     .container1 {
         grid-template-columns: repeat(2, 1fr);
-        gap: 15px;
-        margin: 20px 28px;
+        gap: 25px;
+        margin: 10px auto;
+        max-width: 100px;
     }
 
+    .image1 {
+        flex-direction: column;
+        gap: 2.5rem;
+        margin: 4rem auto;
+        align-items: center;
+    }
+
+    .cuadro {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 40px;
+        margin-top: 70px;
+    }
+
+    .word, .iconn, .copy {
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .iconn {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .iconn img {
+        width: 26px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .title h1 {
+        font-size: 20px;
+        letter-spacing: 4px;
+    }
+
+    .title h2 {
+        font-size: 12px;
+        letter-spacing: 4px;
+    }
+    
+    .title {
+        text-decoration: none;
+    }
+
+    .icons {
+        top: 8px;
+        right: 10px;
+        gap: 12px;
+    }
+
+    .icons img {
+        width: 22px;
+    }
+
+    .container1 {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin: 20px auto;
+        max-width: 100px;
+    }
+
+    .image1 {
+        flex-direction: column;
+        gap: 2rem;
+        margin: 3rem auto;
+        align-items: center;
+    }
 
     .cuadro {
         padding: 20px;
         font-size: 12px;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .iconn {
-        display: grid;
-        gap: 4px;
     }
 
     .iconn img {
-        width: 30%;
-        height: auto;
+        width: 22px;
+    }
+
+    .copy {
+        font-size: 10px;
     }
 }

@@ -20,8 +20,10 @@
             </a>
         </div>
         <div class="title">
-            <h1> ELVEN </h1>
-            <h2> STORE </h2>
+            <a href="../HTML/home.html">
+                <h1> ELVEN </h1>
+                <h2> STORE </h2>
+            </a>
             <hr>
         </div>
         <section>
@@ -120,15 +122,15 @@
             </div>
         </section>
     </footer>
-
+    <script>
+        document.body.style.overflow = "hidden"
+        setTimeout(() => {
+            const minicargador = document.querySelector("#cargador")
+            minicargador.style.display = "none"
+            document.body.style.overflow = "auto"
+        }, 1000)
+    </script>
+    <script src="../JS/storage.js"></script>
 </body>
-<script>
-    document.body.style.overflow = "hidden"
-    setTimeout(() => {
-        const minicargador = document.querySelector("#cargador")
-        minicargador.style.display = "none"
-        document.body.style.overflow = "auto"
-    }, 1000)
-</script>
 
 </html>
