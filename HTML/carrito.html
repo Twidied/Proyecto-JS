@@ -8,6 +8,10 @@
     <title>Carrito</title>
 </head>
 
+<div id="cargador">
+    <img src="../src/img/ico.svg" alt="ico">
+</div>
+
 <body>
     <header>
         <div class="text-peqe">
@@ -100,8 +104,17 @@
             </div>
         </section>
     </footer>
+    <script>
+        document.body.style.overflow = "hidden"
+        setTimeout(() => {
+            const minicargador = document.querySelector("#cargador")
+            minicargador.style.display = "none"
+            document.body.style.overflow = "auto"
+        }, 1000)
+    </script>
+    <script src="../JS/storage.js"></script>
+    <script src="../JS/carrito.js"></script>
 </body>
-<script src="../JS/storage.js"></script>
-<script src="../JS/carrito.js"></script>
+
 
 </html>
