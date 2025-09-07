@@ -1,3 +1,4 @@
+
 function renderCart() {
     const cart = getCart();
     const cartContainer = document.getElementById("cartContainer");
