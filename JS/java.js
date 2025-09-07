@@ -18,7 +18,7 @@ function mainCard(product) {
     cost.textContent = `$${price}`;
 
     const addButton = document.createElement("button");
-    addButton.textContent = "Agregar al carrito";
+    addButton.textContent = "Add to cart";
     addButton.classList.add("btn-add");
 
     addButton.addEventListener("click", () => {
@@ -27,6 +27,26 @@ function mainCard(product) {
 
     card.append(img, name, cost, addButton);
     container1.appendChild(card);
+}
+
+function renderProducts(products) {
+    const container1 = document.querySelector(".container1");
+    container1.innerHTML = ""; 
+    products.forEach(product => mainCard(product));
+}
+
+async function getProducts(category = "") {
+    try {
+        let url = apiUrl;
+        if (category) {
+            url = `${apiUrl}/category/${category}`;
+        }
+        const response = await fetch(url);
+        const products = await response.json();
+        renderProducts(products);
+    } catch (error) {
+        console.error("Error cargando productos:", error);
+    }
 }
 
 function addToCart(product) {
@@ -49,15 +69,46 @@ function updateCartCount() {
     document.getElementById("cuenta-carrito").textContent = cart.length;
 }
 
-async function getProducts() {
-    try {
-        const response = await fetch(apiUrl);
-        const products = await response.json();
-        products.forEach(product => mainCard(product));
-    } catch (error) {
-        console.error(error);
-    }
-}
+document.addEventListener("DOMContentLoaded", () => {
+    getProducts();
+    updateCartCount();
 
-getProducts();
-updateCartCount();
+    document.querySelectorAll("a").forEach(link => {
+        const text = link.textContent.trim().toUpperCase();
+
+        if (text === "WOMAN") {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                getProducts("women's clothing");
+            });
+        }
+
+        if (text === "MEN") {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                getProducts("men's clothing");
+            });
+        }
+
+        if (text === "ACCESSORIES") {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                getProducts("jewelery");
+            });
+        }
+
+        if (text === "TECHNOLOGY") {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                getProducts("electronics");
+            });
+        }
+
+        if (text === "ALL") {
+            link.addEventListener("click", e => {
+                e.preventDefault();
+                getProducts();
+            });
+        }
+    });
+});
