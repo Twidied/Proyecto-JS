@@ -14,10 +14,9 @@ Una aplicación web que simula una tienda online de moda y estilo, con navegaci�
 
 ---
 
-## Organización del proyecto  
+## Estructura del proyecto    
 
-La estructura principal del proyecto está dividida en **estilos**, **vistas**, **scripts** y **recursos multimedia**:  
-
+PROYECTO-JS
 │
 ├── CSS
 │ ├── carrito.css
@@ -43,13 +42,14 @@ La estructura principal del proyecto está dividida en **estilos**, **vistas**, 
 │ ├── *.svg
 │ └── *.mp4
 │
-└── README
+└── README.md
 
 
 ---
 
 ## Funcionalidades  
 
+- **Carga dinámica de productos** mediante la API [FakeStoreAPI](https://fakestoreapi.com/products).
 - **Carrito interactivo:**  
 - Añadir productos.
 - Eliminar productos. 
