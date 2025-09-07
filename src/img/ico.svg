@@ -1,0 +1,19 @@
+<svg width="250" height="250" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .letter {
+      font-family: 'Bodoni MT', serif;
+      font-size: 120px;
+      font-weight: 700;
+      fill: black;
+    }
+  </style>
+  
+  <!-- E arriba -->
+  <text x="70" y="90" class="letter">E</text>
+  
+  <!-- L al medio, tocando la E -->
+  <text x="90" y="150" class="letter">L</text>
+  
+  <!-- V abajo, tocando la L -->
+  <text x="70" y="210" class="letter">V</text>
+</svg>
