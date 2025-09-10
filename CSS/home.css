@@ -200,6 +200,10 @@ body {
     width: 100%;
 }
 
+.fav1 img {
+    width: 10px;
+    height: auto;
+}
 
 .image1 {
     display: flex;
