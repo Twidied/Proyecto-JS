@@ -22,12 +22,15 @@ const apiUrl = "https://fakestoreapi.com/products";
     addButton.textContent = "Add to cart";
     addButton.classList.add("btn-add");
 
+    const adda = document.createElement("a");
+    adda.textContent = "fav";
+    adda.classList.add("btn-add");
 
     addButton.addEventListener("click", () => {
         addToCart({ id, title, price, image });
     });
 
-    card.append(img, name, cost, addButton);
+    card.append(img, name, cost, addButton, adda,);
     container1.appendChild(card);
     }
 
